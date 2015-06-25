@@ -332,6 +332,7 @@ nav.navigation.posts-navigation {
 	float: left;
 	display: inline-block;
 	height: 280px;
+	display: none;
 
 	width: 100%;
 	line-height: 280px;
@@ -344,7 +345,6 @@ nav.navigation.posts-navigation {
 		@include clearfix;
 		width: 100%;
 		text-align: center;
-		display: none;
 		a {
 			color: white;
 			padding: 5px;

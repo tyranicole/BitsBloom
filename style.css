@@ -668,6 +668,7 @@ nav.navigation.posts-navigation {
   float: left;
   display: inline-block;
   height: 280px;
+  display: none;
   width: 100%;
   line-height: 280px;
   margin: 15px auto; }
@@ -678,8 +679,7 @@ nav.navigation.posts-navigation {
     content: "";
     display: table;
     width: 100%;
-    text-align: center;
-    display: none; }
+    text-align: center; }
     nav.navigation.posts-navigation .nav-links a {
       color: white;
       padding: 5px; }

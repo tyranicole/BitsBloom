@@ -18,12 +18,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <script type="text/javascript">
+$(document).ready(function() {
+	 var bits = '<a class="bitsbulletin" href="/bitsbulletin">bitsbulletin</a>';
+	setTimeout(function() {
+		$('ul.nav-menu').append(bits);
 
- var bits = '<a class="bitsbulletin" href="/bitsbulletin">bitsbulletin</a>';
-setTimeout(function() {
-	$('ul.nav-menu').append(bits);
-
-}, 500);
+	}, 500);
+});
 </script>
 
 <?php wp_head(); ?>

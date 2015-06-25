@@ -678,7 +678,8 @@ nav.navigation.posts-navigation {
     content: "";
     display: table;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    display: none; }
     nav.navigation.posts-navigation .nav-links a {
       color: white;
       padding: 5px; }
@@ -1402,8 +1403,6 @@ div.wrapper {
         div.wrapper article.latest-stories article:nth-child(7), div.wrapper article.latest-stories article:nth-child(9), div.wrapper article.latest-stories article:nth-child(11) {
           margin-top: 100px; } }
     div.wrapper article article {
-      content: "";
-      display: table;
       height: 350px;
       width: 100%;
       margin-left: 0 !important;
@@ -1414,6 +1413,11 @@ div.wrapper {
           margin-left: 10px;
           width: 32.33333%;
           float: left; } }
+      div.wrapper article article > a {
+        height: 100%;
+        width: 50%;
+        float: left;
+        display: block; }
       div.wrapper article article .entry-title {
         font-size: 1.3em;
         line-height: 20px; }
@@ -1494,8 +1498,8 @@ div.wrapper {
         div.wrapper article article.category-bits-talk .post-categories a {
           background: #3b65c5; }
       div.wrapper article article .image {
-        width: 50%;
-        float: left;
+        width: 100%;
+        float: none;
         height: 100%;
         background-size: cover; }
       div.wrapper article article .body {

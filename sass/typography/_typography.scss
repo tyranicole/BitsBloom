@@ -1,0 +1,30 @@
+
+
+@font-face {
+    font-family: "Maison Mono Bold";
+    src: url(/fonts/MaisonMonoMG-Bold.otf);
+    font-weight: normal;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $color__text-main;
+	font-family: "Maison Mono Bold",Consolas, monospace;
+	@include font-size(1);
+	line-height: $font__line-height-body;
+
+  a {
+    color: #444;
+    text-decoration: none;
+    &:visited, :hover {
+      color: #444;
+    }
+  }
+}
+
+@import "headings";
+
+@import "copy";

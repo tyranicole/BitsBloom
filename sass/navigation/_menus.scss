@@ -1,0 +1,460 @@
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 1.5em;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul {
+					left: 100%;
+				}
+
+
+
+
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a {
+			}
+
+			a:hover {
+			}
+		}
+
+		li:hover > ul {
+			left: auto;
+		}
+	}
+	li {
+		float: left;
+		position: relative;
+
+		&:hover > a {
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+	}
+}
+
+
+
+nav#site-navigation {
+	@media screen and (max-width: 1131px) {
+		float: none;
+		display: block;
+
+	}
+
+	li.categories {
+		@media screen and (max-width: 1080px) {
+			height: auto !important;
+		}
+		ul {
+			li {
+				@include box-sizing(border-box);
+					border: 3px solid transparent;
+
+					@media screen and (max-width: 1080px) {
+						width: 100%;
+						text-align: center;
+					}
+				&.current-cat {
+					border: 3px solid black;
+				}
+			}
+		}
+	}
+	a.bitsbulletin {
+		padding: 4px 20px;
+		@media screen and (max-width: 1080px) {
+			text-align: center;
+			width: 100%;
+		}
+
+	}
+}
+
+/* Small menu. */
+.menu-toggle {
+	display: none;
+}
+
+/* @media screen and (max-width: 600px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+} */
+
+@media screen and (max-width: 1080px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	& .nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	& .nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+
+footer.site-footer {
+	border-top: 1px solid #eee;
+	padding-top: 25px;
+	ul {
+		list-style-type: none;
+		max-width: 95%;
+		li {
+			display: inline-block;
+			margin-right: 25px;
+			a {
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			&:last-child {
+				float: right;
+			}
+		}
+	}
+
+
+}
+
+#footer-sidebar1 {
+	text-align: left;
+	border-top:1px solid #ddd;
+	padding-top: 10px;
+
+	aside {
+		margin: 0 0 0em !important;
+		display: inline-block;
+		@include MQ(M) {
+			width: 50%;
+		}
+	}
+
+	ul {
+		list-style-type: none;
+		max-wdith: 100%;
+		width: 100%;
+		display: inline-block;
+		padding: 0;
+		margin:0;
+		text-align: left;
+		padding-left: 20px;
+		@include MQ(S) {
+			padding: 5px;
+			padding-bottom:0px;
+			margin-bottom: 15px;
+			max-width: 95%;
+		}
+		li {
+			display: inline-block;
+			margin: 0 20px;
+
+			a {
+				font-weight: bold;
+				font-size: 15px;
+				text-transform: uppercase;
+			}
+		}
+
+		&.social {
+			@include MQ(S) {
+				max-width: 50%;
+				float: right;
+				text-align: right;
+			}
+			a {font-size: 20px;}
+		}
+	}
+
+	.widget-title {display: none;}
+
+	.footer-statement {
+		background: black;
+		text-align: center;
+
+
+		i {
+			color: red;
+		}
+		img {
+			display: block;
+			width: 250px;
+			margin: 20px auto;
+			padding-top: 35px;
+		}
+		h2 {
+			color: white;
+			margin: 0;
+			font-size: 15px;
+			padding-bottom: 30px;
+		}
+
+	}
+}
+
+
+// .menu-toggle {
+// 	position: absolute;
+// 	top:40px;
+// 	right: 10%;
+// }
+
+
+//nav toggle
+
+.menu-toggle {
+	position: absolute; right: 10%; top: 40px; z-index:1050;
+	display: block;
+	background:none;
+	outline:none;
+	box-shadow:none;
+	border:none;
+	display: none;
+	//@include MQ(M) {
+		//display: none;
+	//}
+
+	@media screen and (max-width: 1080px) {
+		display: block;
+	}
+
+
+}
+
+.menu-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+.menu-toggle span, .menu-toggle span:before, .menu-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #444;
+  position: absolute;
+  display: block;
+  content: '';
+}
+.menu-toggle span:before {
+  top: -10px;
+}
+.menu-toggle span:after {
+  bottom: -10px;
+}
+
+.menu-toggle span, .menu-toggle span:before, .menu-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+.menu-toggle.active span {
+  background-color: transparent;
+}
+.menu-toggle.active span:before, .menu-toggle.active span:after {
+  top: 0;
+}
+.menu-toggle.active span:before {
+  transform: rotate(45deg);
+}
+.menu-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+
+a.bitsbulletin {
+	display: inline-block;
+	float:left;
+	padding:0 20px;
+	font-size:22px;
+	color: $bitsbulletin-color;
+	font-weight:600;
+	background: white;
+
+	&:visited, &:hover {
+	color: $bitsbulletin-color;
+	}
+}
+
+
+nav.navigation.posts-navigation {
+	float: left;
+	display: inline-block;
+	height: 280px;
+
+	width: 100%;
+	line-height: 280px;
+	margin:15px auto;
+	@include MQ(M) {
+		width: 31.5%;
+	}
+
+	.nav-links {
+		@include clearfix;
+		width: 100%;
+		text-align: center;
+		a {
+			color: white;
+			padding: 5px;
+		}
+
+	}
+}
+
+body {
+
+	&.home {
+		.nav-links a {
+			color: #444;
+			background: RGBA(181, 188, 187, 1);
+		}
+	}
+
+	&.category-design {
+		.nav-links a {
+			background: $design-color;
+		}
+
+	nav#site-navigation {
+		li.categories {
+
+			ul li.current-cat {
+				border: 3px solid $design-color;
+			}
+		}
+
+		.nav-menu {
+			@include clearfix;
+		}
+	}
+
+	}
+
+	&.category-beauty {
+		.nav-links a {
+			background: $beauty-color;
+		}
+
+		nav#site-navigation {
+		li.categories {
+			ul li.current-cat {
+				border: 3px solid $beauty-color;
+			}
+		}
+	}
+
+	}
+
+	&.category-fashion {
+			.nav-links a {
+				background: $fashion-color;
+		}
+
+		nav#site-navigation {
+		li.categories {
+			ul li.current-cat {
+				border: 3px solid $fashion-color;
+			}
+		}
+	}
+	}
+
+	&.category-bitsbulletin {
+		.nav-links a {
+			background: $bitsbulletin-color;
+		}
+
+		nav#site-navigation {
+		li.categories {
+			ul li.current-cat {
+				border: 3px solid $bitsbulletin-color;
+			}
+		}
+	}
+	}
+
+	&.category-bits-talk {
+			.nav-links a {
+				background: $bits-talk-color;
+			}
+
+			nav#site-navigation {
+		li.categories {
+			ul li.current-cat {
+				border: 3px solid $bits-talk-color;
+				a {
+					color: $bits-talk-color;
+				}
+			}
+		}
+	}
+		}
+
+
+	&.category-lifestyle {
+		.nav-links a {
+			background: $lifestyle-color;
+		}
+
+		nav#site-navigation {
+		li.categories {
+			ul li.current-cat {
+				border: 3px solid $lifestyle-color;
+			}
+		}
+	}
+	}
+
+
+}

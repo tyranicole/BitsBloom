@@ -1,0 +1,482 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.full-width {
+  max-width: 100% !important;
+}
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+
+
+.content-area {
+  margin-top: 73px;
+
+  article {
+    max-width:100%;
+    margin: 15px auto;
+    @include MQ(M) {
+    max-width: 95%;
+    }
+    .author {
+      width: 90%;
+      display: block;
+      margin: 0 auto;
+      @include MQ(M) {
+      width: 100%;
+
+      }
+      img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+      }
+
+      .left {
+        float: left;
+        display: inline-block;
+      }
+
+      .right {
+        display: inline-block;
+        margin-left: 10px;
+        .entry-meta {
+          display: inline-block;
+        }
+      }
+
+    }
+
+    span.categories {
+      width:90%;
+      display: block;
+      margin:0 auto;
+      position: absolute;
+      padding-left: 25px;
+      @include MQ(M) {
+        padding-left: 0;
+        width: 70%;
+        margin:0;
+      }
+      ul {
+        list-style-type: none;
+        margin: 20px 0;
+        padding:0;
+        li {
+          margin:0;
+          a {
+            padding: 5px 3px 5px 3px;
+            color: white;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+
+
+    .entry-header h1 {
+      font-size: 40px;
+      max-width: 100%;
+      margin: 0 auto;
+      @include MQ(M) {
+      width: auto;
+      //max-width: 90%;
+
+      }
+    }
+
+    .image-holder {
+      max-width: 90%;
+      margin: 0 auto;
+      @include MQ(M) {
+        max-width: 70%;
+        margin:0;
+      }
+    }
+    .image {
+      height: 500px;
+      margin:0;
+      background-size: cover !important;
+      background-position: center center;
+    }
+
+    .image-caption {
+      background: #3BC1C5;
+      margin:0;
+      color: white;
+      float: right;
+      padding: 10px;
+    }
+
+    &.category-design {
+      span.categories ul li a {
+        background: $design-color;
+      }
+
+      h1.entry-title {
+        color: $design-color;
+      }
+
+      .image-caption {
+        background: $design-color;
+      }
+    }
+
+    &.category-fashion {
+      span.categories ul li a {
+        background: $fashion-color;
+      }
+
+      h1.entry-title {
+        color: $fashion-color;
+      }
+
+      .image-caption {
+        background: $fashion-color;
+      }
+    }
+
+    &.category-beauty {
+      span.categories ul li a {
+        background: $beauty-color;
+      }
+
+      h1.entry-title {
+        color: $beauty-color;
+      }
+
+      .image-caption {
+        background: $beauty-color;
+      }
+    }
+
+    &.category-lifestyle {
+      span.categories ul li a {
+        background: $lifestyle-color;
+      }
+
+      h1.entry-title {
+        color: $lifestyle-color;
+      }
+
+      .image-caption {
+        background: $lifestyle-color;
+      }
+    }
+
+    &.category-bitsbulletin {
+      span.categories ul li a {
+        background: $bitsbulletin-color;
+      }
+
+      h1.entry-title {
+        color: $bitsbulletin-color;
+      }
+
+      .image-caption {
+        background: $bitsbulletin-color;
+      }
+    }
+
+    &.category-bits-talk {
+      span.categories ul li a {
+        background: $bits-talk-color;
+      }
+
+      h1.entry-title {
+        color: $bits-talk-color;
+      }
+
+      .image-caption {
+        background: $bits-talk-color;
+      }
+    }
+
+
+  }
+
+}
+
+
+
+section#moreOn {
+  position: absolute;
+  right:5%;
+  top: 30%;
+  width:240px;
+  display: none;
+  @include MQ(M) {
+    display: block;
+  }
+
+  &.category-beauty {
+    h2 {
+      color: $beauty-color;
+    }
+    .image {
+      border-left: 10px solid $beauty-color;
+    }
+
+    .post-categories li {
+      a {
+        background: $beauty-color;
+      }
+    }
+
+    .entry-title a {
+      color: $beauty-color;
+    }
+
+  }
+
+  &.category-design {
+    h2 {
+      color: $design-color;
+    }
+    .image {
+      border-left: 10px solid $design-color;
+    }
+
+    .post-categories li {
+      a {
+        background: $design-color;
+      }
+    }
+
+    .entry-title a {
+      color: $design-color;
+    }
+
+  }
+
+
+  &.category-fashion {
+    h2 {
+      color: $fashion-color;
+    }
+    .image {
+      border-left: 10px solid $fashion-color;
+    }
+
+    .post-categories li {
+      a {
+        background: $fashion-color;
+      }
+    }
+
+    .entry-title a {
+      color: $fashion-color;
+    }
+
+  }
+
+  &.category-lifestyle {
+    h2 {
+      color: $lifestyle-color;
+    }
+    .image {
+      border-left: 10px solid $lifestyle-color;
+    }
+
+    .post-categories li {
+      a {
+        background: $lifestyle-color;
+      }
+    }
+
+    .entry-title a {
+      color: $lifestyle-color;
+    }
+
+  }
+
+  &.category-bitsbulletin {
+    h2 {
+      color: $bitsbulletin-color;
+    }
+    .image {
+      border-left: 10px solid $bitsbulletin-color;
+    }
+
+    .post-categories li {
+      a {
+        background: $bitsbulletin-color;
+      }
+    }
+
+    .entry-title a {
+      color: $bitsbulletin-color;
+    }
+
+  }
+
+
+  &.category-bits-talk {
+    h2 {
+      color: $bits-talk-color;
+    }
+    .image {
+      border-left: 10px solid $bits-talk-color;
+    }
+
+    .post-categories li {
+      a {
+        background: $bits-talk-color;
+      }
+    }
+
+    .entry-title a {
+      color: $bits-talk-color;
+    }
+
+  }
+
+
+  .post-categories {
+    margin:0;
+    padding:0;
+
+    li {
+      list-style-type: none;
+      margin-top: 10px;
+      border:none;
+      padding:0;
+      margin:10px;
+      a {
+        padding: 5px 3px 5px 3px;
+        background: $fashion-color;
+        color: white;
+      }
+    }
+  }
+
+  li {
+    border: 1px solid #e8e8e8;
+    margin-bottom: 15px;
+    list-style-type: none;
+    .image {
+      height: 150px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 20px;
+      padding-left: 10px;
+      line-height: 20px;
+    }
+  }
+}
+
+
+.author-profile {
+  background: #E7E7E8;
+  padding: 40px;
+  max-width: 90%;
+  margin: 0 0 0 0px;
+  background: url('images/stripe_bg.png');
+  @include MQ(M) {
+    max-width: 70%;
+  }
+
+  .author-avatar {
+    float: left;
+    margin-right: 15px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .author-name {
+    display: block;
+    padding-top: 15px;
+    font-size: 1.2em;
+  }
+
+  .author-bio {
+    clear:both;
+  }
+
+}
+
+
+.entry-content blockquote {
+
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 135%;
+  border-top: 10px solid #e7e7e8;
+  border-bottom: 10px solid #e7e7e8;
+  padding: 20px 0;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//huge it slider
+
+#huge_it_slideshow_image_container_2 .huge_it_slide_container_2 .huge_it_slider_2 .huge_it_slideshow_image_item_2 .huge_it_slideshow_title_text_2 {
+  right: auto !important;
+  left: 10%;
+  font-size: 50px !important;
+  color: white !important;
+  background: none !important;
+  background-color: transparent !important;
+  text-align: left !important;
+  font-size: 1.5rem;
+  line-height: 1.85rem;
+  @include MQ(M) {
+    left:3% !important;
+    line-height: 50px !important;
+    font-size: 50px;
+  }
+}
+
+.huge_it_slideshow_dots_thumbnails_2 {
+  display: none !important;
+}
+
+.huge_it_slideshow_description_text_2 {
+  right: auto !important;
+  left: 3% !important;
+}

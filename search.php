@@ -46,9 +46,9 @@ get_header(); ?>
 				<?php get_sidebar(); ?>
 			</section>
 
-			</div>
+			</div> <!-- div.wrapper -->
 
-		</main>
-	</section>
+		</main><!-- #main -->
+	</section><!-- #primary -->
 
 <?php get_footer(); ?>

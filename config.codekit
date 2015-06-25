@@ -317,6 +317,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/section-title-categories.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17910,
+		"inputAbbreviatedPath": "\/images\/section-title-categories.png",
+		"outputAbbreviatedPath": "\/images\/section-title-categories.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/section-title-sections.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1112,7 +1123,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Harris Robin Kalash",
+"lastSavedByUser": "Tyra Nicole Dumars",
 "manualImportLinks": {
 	},
 "projectAttributes": {

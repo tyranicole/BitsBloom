@@ -12,9 +12,8 @@
 			<div class="right">
 			<span class="author-name"><?php the_author(); ?></span>
 			<div class="entry-meta">
-				<?//php bitsbloom_posted_on(); ?>
 				<?php the_date(); ?>
-			</div><!-- .entry-meta -->
+			</div>
 			</div>
 		</div>
 
@@ -39,11 +38,13 @@
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-	</header><!-- .entry-header -->
+	</header>
 
 	<div class="image-holder">
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID, 'thumbnail') ); ?>
+
 	<div class="image" style="background:url('<?php echo $url ?>') no-repeat center center"></div>
+
 	<span class="image-caption">
 		<?php the_field('image-caption'); ?>
 	</span>
@@ -57,10 +58,9 @@
 			) );
 		?>
 
-	</div><!-- .entry-content -->
+	</div>
 
 	<footer class="entry-footer">
-		<?php// bitsbloom_entry_footer(); ?>
 
 		<div class="author-profile">
 			<div class="image-name">
@@ -72,5 +72,5 @@
 				<?php the_author_description(); ?>
 			</div>
 		</div>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+	</footer>
+</article>

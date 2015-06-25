@@ -1823,3 +1823,7 @@ section#comments {
 /* close commented backslash hack */
 .soliloquy-container {
   max-height: 500px !important; }
+
+.sections ul li {
+list-style-type: none;
+}

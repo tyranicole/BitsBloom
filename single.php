@@ -47,7 +47,7 @@ get_header(); ?>
 					<a href="<?php echo get_permalink(); ?>">
           <li>
 					<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID, 'thumbnail') ); ?>
-					<div class="image" style="background:url('<?php echo $url ?>') no-repeat center center"></div>
+					<div class="image" style="background:url('<?php echo $url ?>') no-repeat center center; background-size:100%;"></div>
 
           <?php echo get_the_category_list(); ?>
           <?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>

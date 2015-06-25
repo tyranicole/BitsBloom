@@ -50,7 +50,7 @@ get_header(); ?>
 
       <li>
         <h3>
-          <img src="<?php bloginfo('template_directory'); ?>/images/section-title-bitstalk.png" />
+          <img src="<?php bloginfo('template_directory'); ?>/images/section-title-bitsbulletin.png" />
         </h3>
         <p>
           BitsBulletin is the site's calendar listing. This section will highlight various events and career opportunities within the tech scene.
@@ -59,7 +59,7 @@ get_header(); ?>
 
       <li>
         <h3>
-          <img src="<?php bloginfo('template_directory'); ?>/images/section-title-sections.png" />
+          <img src="<?php bloginfo('template_directory'); ?>/images/section-title-categories.png" />
         </h3>
 
         <p>

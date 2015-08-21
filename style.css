@@ -220,6 +220,21 @@ td,
 th {
   padding: 0; }
 
+.center {
+  width: auto;
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 1080px) {
+  .center {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
@@ -549,28 +564,19 @@ footer.site-footer {
 #footer-sidebar1 {
   text-align: left;
   border-top: 1px solid #ddd;
-  padding-top: 10px; }
+  padding-top: 10px;
+  background-color: #fff }
   #footer-sidebar1 aside {
     margin: 0 0 0em !important;
     display: inline-block; }
-    @media only screen and (min-width: 768px) {
-      #footer-sidebar1 aside {
-        width: 50%; } }
   #footer-sidebar1 ul {
     list-style-type: none;
-    max-wdith: 100%;
+    max-width: 100%;
     width: 100%;
     display: inline-block;
     padding: 0;
     margin: 0;
-    text-align: left;
-    padding-left: 20px; }
-    @media only screen and (min-width: 480px) {
-      #footer-sidebar1 ul {
-        padding: 5px;
-        padding-bottom: 0px;
-        margin-bottom: 15px;
-        max-width: 95%; } }
+    text-align: left;}
     #footer-sidebar1 ul li {
       display: inline-block;
       margin: 0 20px; }
@@ -578,11 +584,10 @@ footer.site-footer {
         font-weight: bold;
         font-size: 15px;
         text-transform: uppercase; }
-    @media only screen and (min-width: 480px) {
       #footer-sidebar1 ul.social {
         max-width: 50%;
         float: right;
-        text-align: right; } }
+        text-align: right;}
     #footer-sidebar1 ul.social a {
       font-size: 20px; }
   #footer-sidebar1 .widget-title {
@@ -602,6 +607,38 @@ footer.site-footer {
       margin: 0;
       font-size: 15px;
       padding-bottom: 30px; }
+    @media only screen and (max-width: 960px) {
+      #footer-sidebar1 {
+        padding-top: 10px !important;
+      }
+      #footer-sidebar1 aside {
+        width: 50%;
+      }
+      #footer-sidebar1 aside {
+        width: 50%;
+      }
+      #footer-sidebar1 aside ul li {
+        display: block;
+        margin: 15px;
+      }
+      #footer-sidebar1 ul.social {
+        width: 45%;
+        margin-left: 5%;
+        max-width: 45%;
+        padding-left: 0;
+      }
+      #footer-sidebar1 ul.social li {
+        display: inline-block;
+        float: right;
+        margin: 15px;
+      }
+      #footer-sidebar1 ul.social li:nth-of-type(4) {
+        clear: both;
+      }
+      #footer-sidebar1 .footer-statement img {
+        margin-top: 10px;
+      }
+    }       
 
 .menu-toggle {
   position: absolute;
@@ -1694,12 +1731,12 @@ form#searchform {
   height: auto !important; }
 
 #about-page {
-  margin: 80px 40px;
+  margin: 127px auto 0px auto;
   background: white;
-  padding: 0 40px 40px 0;
+  padding: 0 0 40px 0;
   font-family: "Maison Mono Bold", Consolas, monospace; }
   #about-page .about-header {
-    width: 75%;
+    width: 100% !important;
     float: left;
     margin: 0;
     text-align: left;
@@ -1711,12 +1748,13 @@ form#searchform {
       background-size: cover;
       width: 100%;
       line-height: 180%;
-      font-weight: bold; }
+      font-weight: bold;
+      padding-bottom: 20px; }
       #about-page .about-header .content h1 {
-        padding: 100px;
-        padding-right: 10%; }
+        padding: 10px 30px !important;
+        color: #fff;}
   #about-page .statement {
-    padding: 30px 100px;
+    padding: 30px 9%;
     margin: 0 auto;
     position: relative;
     text-align: left;
@@ -1733,17 +1771,19 @@ form#searchform {
   #about-page .sections {
     background-position: cover;
     text-align: center;
-    margin: 50px -50px;
-    padding: 0 50px; }
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 20px 20px 40px 20px !important;
+    background: url("images/stripe_bg.png"); }
     #about-page .sections h2 {
       text-transform: uppercase;
       font-size: 40px;
-      margin: 40px 0; }
+      margin: 20px 0; }
     #about-page .sections ul {
       display: flex;
       -webkit-flex-flow: row wrap;
       justify-content: space-around;
-      background: url("images/stripe_bg.png"); }
+      padding: 0 !important; }
       #about-page .sections ul h3 {
         font-size: 30px; }
       #about-page .sections ul p {
@@ -1751,17 +1791,35 @@ form#searchform {
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 20px; }
-      #about-page .sections ul li {
-        width: 45%;
-        margin: 20px auto; }
+      body #about-page .sections ul li {
+        width: 50% !important;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0 20px; }
         #about-page .sections ul li:nth-of-type(1) {
           color: #3b65c5; }
         #about-page .sections ul li:nth-of-type(2) {
           color: #f7941e; }
         #about-page .sections ul li:nth-of-type(3) {
           color: #662d91; }
-    #about-page .sections img {
-      max-width: 40%; }
+    #about-page .sections ul li img {
+      max-width: 50%; }
+      #about-page .sections li:nth-of-type(3) img {
+      max-width: 55%; }
+    @media (max-width: 960px) {
+      body #about-page .sections ul li {
+        width: 100% !important;
+      }
+    }
+    @media (max-width: 460px) {
+      #about-page .about-header .content h1 {
+        font-size: 1.5em;
+      }
+      #about-page .statement {
+        padding-right: 0;
+        padding-right: 0;
+      }
+    } 
 
 #tribe-events-pg-template {
   margin-top: 106px; }

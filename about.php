@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<section id="about-page">
+<section id="about-page" class="center">
   <div class="about-header">
 
     <div class="content">

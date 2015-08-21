@@ -35,6 +35,7 @@ $(document).ready(function() {
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'bitsbloom' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+		<div class="center">
 		<div class="site-branding">
 			<h1 class="site-title show-l">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/images/bitsbloom-logo.png" /></a>
@@ -70,6 +71,7 @@ $(document).ready(function() {
 		<input type="submit" id="searchsubmit" value="Search" class="btn" />
 		</div>
 	</form>
+	</div>
 	</header>
 
 	<div id="content" class="site-content">

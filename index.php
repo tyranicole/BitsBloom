@@ -20,7 +20,7 @@ get_header(); ?>
 				echo get_new_royalslider(1);
 			?>
 
-		<div class="wrapper">
+		<div class="wrapper center">
 			<article class="latest-stories">
 
 		<?php if ( have_posts() ) : ?>

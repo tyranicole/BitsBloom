@@ -37,7 +37,7 @@ get_header(); ?>
 				 ?>
 			<?php endif; ?>
 
-		<div class="wrapper">
+		<div class="wrapper center">
 			<article class="latest-stories">
 
 		<?php if ( have_posts() ) : ?>

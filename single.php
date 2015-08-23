@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area center">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -69,9 +69,10 @@ get_header(); ?>
 <style>
 
 	.entry-content {
-      padding-top: 50px;
+      padding-top: 10px;
       padding-left: 0px;
-      max-width: 70%;
+      max-width: 1080px;
+      margin-top: 0;
       font-family: 'Open Sans';
 
     }
@@ -97,33 +98,5 @@ get_header(); ?>
 .entry-header {
   margin-top: 50px;
 }
-
-  @media only screen and (max-width: 500px) { /* Change to whatever media query you require */
-      .entry-content {
-        padding-top: 50px;
-        padding-left: 0px;
-        max-width: 100%;
-        font-family: 'Open Sans';
-        padding-rigth: 25px;
-        padding-left: 25px;
-      }
-
-      .entry-title {
-        padding-left: 20px;
-      }
-
-      .author-profile {
-        max-width: 100%;
-        margin-right: 25px;
-        margin-left: 25px;
-      }
-
-      section#comments {
-        max-width: 100%;
-        padding-left: 25px;
-        padding-right: 25px;
-      }
-    }
-
 
 </style>

@@ -613,6 +613,9 @@ footer.site-footer {
         font-weight: bold;
         font-size: 15px;
         text-transform: uppercase; }
+      #footer-sidebar1 ul li a:hover {
+        opacity: .75;
+      }  
       #footer-sidebar1 ul.social {
         max-width: 50%;
         float: right;
@@ -1051,6 +1054,9 @@ section#moreOn {
     display: none;
   }
 }  
+ section#moreOn h2 {
+  margin-top: 25px;
+ }
   section#moreOn.category-beauty h2 {
     color: #662d91; }
   section#moreOn.category-beauty .image {
@@ -1715,24 +1721,28 @@ section.sidebar {
   section.sidebar aside.widget_recent_entries {
     background: #e7e7e8;
     background-image: url("images/stripe_bg.png");
+<<<<<<< HEAD
     height: 318px; }
+=======
+    height: 320px; }
+>>>>>>> origin/master
     section.sidebar aside.widget_recent_entries h1 {
       text-align: center;
       text-transform: uppercase;
       font-size: 24px;
       padding: 10px 0;
-      border-bottom: 1px solid #ddd; }
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 0; }
     section.sidebar aside.widget_recent_entries ul {
       list-style-type: none;
       margin: 0;
       padding: 0; }
       section.sidebar aside.widget_recent_entries ul li {
-        padding: 0px 0px 11px 15px;
+        padding: 10px 0 10px 15px;
         width: 100%;
         margin: 0;
         border-bottom: 1px solid #ddd;
         font-size: 20px;
-        display: inline-block;
         max-width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -1794,7 +1804,7 @@ section.sidebar {
           background: #662d91 !important; }
         .category section.sidebar div.mc4wp-form {
           padding-top: 10px;
-          padding-bottom: 6px;
+          padding-bottom: 7px;
         }  
 
 #primary .sidebar-archive {

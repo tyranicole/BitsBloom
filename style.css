@@ -745,7 +745,7 @@ nav.navigation.posts-navigation {
   width: 100%;
   line-height: 280px;
   margin: 15px auto; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 801px) {
     nav.navigation.posts-navigation {
       width: 31.5%; } }
   nav.navigation.posts-navigation .nav-links {
@@ -1036,7 +1036,7 @@ body.category-lifestyle nav#site-navigation li.categories ul li.current-cat {
   margin-right: 40px;
   float: left;
 }
-@media(max-width: 1080px) {
+@media(max-width: 800px) {
   .single-post .site-content #main {
     width: 100%;
     margin: auto;
@@ -1046,7 +1046,7 @@ section#moreOn {
   width: 240px;
   float: right;
   display: block; }
-@media(max-width: 1080px) {
+@media(max-width: 800px) {
   section#moreOn {
     display: none;
   }
@@ -1104,21 +1104,27 @@ section#moreOn {
     padding: 0; }
     section#moreOn .post-categories li {
       list-style-type: none;
-      margin-top: 10px;
       border: none;
       padding: 0;
-      margin: 10px; }
+      margin: 10px 0 10px 10px;
+      font-size: 14px;
+      float: left;
+      border-radius: 2px;
+       }
       section#moreOn .post-categories li a {
         padding: 5px 3px 5px 3px;
         background: #ed1a51;
-        color: white; }
+        color: white;
+      }
   section#moreOn li {
     border: 1px solid #e8e8e8;
     margin-bottom: 15px;
     list-style-type: none; }
     section#moreOn li .image {
       height: 150px;
-      width: 100%; }
+      width: 100%;
+      background-size: cover !important; 
+    }
     section#moreOn li h1 {
       font-size: 20px;
       padding-left: 10px;
@@ -1168,7 +1174,7 @@ section#moreOn {
   text-align: left !important;
   font-size: 1.5rem;
   line-height: 1.85rem; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 800px) {
     #huge_it_slideshow_image_container_2 .huge_it_slide_container_2 .huge_it_slider_2 .huge_it_slideshow_image_item_2 .huge_it_slideshow_title_text_2 {
       left: 3% !important;
       line-height: 50px !important;
@@ -1486,7 +1492,7 @@ div.wrapper {
         margin-right: 5%;
         margin-left: 5%;
         margin-bottom: 2% }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 800px) {
           div.wrapper article.latest-stories article:first-child, div.wrapper article.latest-stories article:nth-child(2), div.wrapper article.latest-stories article:nth-child(3), div.wrapper article.latest-stories article:nth-child(4), div.wrapper article.latest-stories article:nth-child(5) {
             width: -moz-calc(100% - 340px);
             width: -webkit-calc(100% - 340px);
@@ -1496,37 +1502,60 @@ div.wrapper {
         div.wrapper article.latest-stories article:first-child .entry-title, div.wrapper article.latest-stories article:nth-child(2) .entry-title, div.wrapper article.latest-stories article:nth-child(3) .entry-title, div.wrapper article.latest-stories article:nth-child(4) .entry-title, div.wrapper article.latest-stories article:nth-child(5) .entry-title {
           font-size: 1.1em;
           line-height: 25px; }
-          @media only screen and (min-width: 768px) {
+          @media only screen and (min-width: 800px) {
             div.wrapper article.latest-stories article:first-child .entry-title, div.wrapper article.latest-stories article:nth-child(2) .entry-title, div.wrapper article.latest-stories article:nth-child(3) .entry-title, div.wrapper article.latest-stories article:nth-child(4) .entry-title, div.wrapper article.latest-stories article:nth-child(5) .entry-title {
               font-size: 2em; } }
         div.wrapper article.latest-stories article:first-child .entry-content, div.wrapper article.latest-stories article:nth-child(2) .entry-content, div.wrapper article.latest-stories article:nth-child(3) .entry-content, div.wrapper article.latest-stories article:nth-child(4) .entry-content, div.wrapper article.latest-stories article:nth-child(5) .entry-content {
           line-height: 20px;
           font-size: 14px; }
-          @media only screen and (min-width: 768px) {
+          @media only screen and (min-width: 800px) {
             div.wrapper article.latest-stories article:first-child .entry-content, div.wrapper article.latest-stories article:nth-child(2) .entry-content, div.wrapper article.latest-stories article:nth-child(3) .entry-content, div.wrapper article.latest-stories article:nth-child(4) .entry-content, div.wrapper article.latest-stories article:nth-child(5) .entry-content {
               line-height: 24px;
               font-size: 16px; } }
         div.wrapper article.latest-stories article:first-child .left, div.wrapper article.latest-stories article:nth-child(2) .left, div.wrapper article.latest-stories article:nth-child(3) .left, div.wrapper article.latest-stories article:nth-child(4) .left, div.wrapper article.latest-stories article:nth-child(5) .left {
           padding: 2px; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1122px) {
         div.wrapper article.latest-stories article:nth-child(7), div.wrapper article.latest-stories article:nth-child(9), div.wrapper article.latest-stories article:nth-child(11) {
-          margin-top: 30px; } }
+          margin-top: 30px; } }   
     div.wrapper article article {
       height: 280px;
       width: 100%;
       margin-left: 0 !important;
-      margin: 2% 1%; }
-      @media only screen and (min-width: 768px) {
+      margin: 2% 1%; } 
+      @media only screen and (min-width: 800px) {
         div.wrapper article article {
           margin-left: 10px;
           width: 32%;
           float: left;
           margin-left: 0;
           margin-right: 2%;
-          margin-bottom: 2.5em }
+          margin-bottom: 2em }
         div.wrapper article.latest-stories article:nth-of-type(5), div.wrapper article.latest-stories article:nth-of-type(8), div.wrapper article.latest-stories article:nth-of-type(11) {  
         margin-right: 0;
         }}
+      @media only screen and (min-width:800px) and (max-width: 1122px) {
+        div.wrapper article.latest-stories article{
+          width: 49% !important;
+          box-sizing: border-box;
+          float: left;
+          margin-right: 2% !important;
+          margin-top: 2%;
+        }
+        body div.wrapper article.latest-stories article:nth-of-type(2) {
+          height: 280px;
+        }
+        body div.wrapper article.latest-stories article:nth-of-type(2n+1), body div.wrapper article.latest-stories article:nth-of-type(1) {
+          margin-right: 0 !important;
+        }
+        body div.wrapper article.latest-stories article:nth-of-type(1) {
+          width: 100% !important;
+          max-width: 100%;
+        }
+        div.wrapper article.latest-stories article
+        body div.wrapper #content .sidebar {
+          display: none;
+        }
+      }  
       div.wrapper article article > a {
         height: 100%;
         width: 50%;
@@ -1680,12 +1709,13 @@ div.wrapper {
 
 section.sidebar {
   display: none; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1122px) {
     section.sidebar {
       display: block; } }
   section.sidebar aside.widget_recent_entries {
     background: #e7e7e8;
-    background-image: url("images/stripe_bg.png"); }
+    background-image: url("images/stripe_bg.png");
+    height: 318px; }
     section.sidebar aside.widget_recent_entries h1 {
       text-align: center;
       text-transform: uppercase;
@@ -1717,7 +1747,8 @@ section.sidebar {
     background-image: url("images/mailinglist-border.png");
     background-repeat: no-repeat;
     background-size: 103%;
-    background-position: 0px -25px; }
+    background-position: 0px -25px;
+    height: 227px; }
     section.sidebar div.mc4wp-form h3 {
       text-transform: uppercase;
       color: white;
@@ -1788,7 +1819,7 @@ form#searchform {
     form#searchform input:focus {
       outline: none; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .latest-stories-ad {
     width: -moz-calc(100% - 340px);
     width: -webkit-calc(100% - 340px);
@@ -1803,14 +1834,14 @@ form#searchform {
 .huge_it_slideshow_image_wrap_2 {
   width: 100% !important;
   overflow: hidden !important; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 800px) {
     .huge_it_slideshow_image_wrap_2 {
       height: 550px !important; } }
 
 #huge_it_slideshow_image_container_2 {
   width: 100% !important;
   overflow: hidden !important; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 800px) {
     #huge_it_slideshow_image_container_2 {
       height: 550px !important; } }
 
@@ -2007,9 +2038,32 @@ html #wpadminbar {
 .home .royalSlider, .category .royalSlider {
   width: 1080px !important;
   margin: auto;
+  max-width: 100%;
 }
 .home .royalSlider .rsContainer, .category .royalSlider .rsContainer {
   width: 1080px !important;
+  max-width: 100%;
+}
+@media (max-width: 800px) and (min-width: 401px) {
+  .home .royalSlider .rsOverflow, .category .royalSlider .rsOverflow, .home .royalSlider, .category .royalSlider, .home .royalSlider .rsContainer, .category .royalSlider .rsContainer {
+    height: 400px !important;
+  }
+  .home .rsDefaultInv .rsGCaption, .category .rsDefaultInv .rsGCaption {
+    padding: 2px 0;
+    font-size: 2em;
+    width: 50%;
+}
+}
+@media (max-width: 400px) {
+  .home .royalSlider .rsOverflow, .category .royalSlider .rsOverflow, .home .royalSlider, .category .royalSlider, .home .royalSlider .rsContainer, .category .royalSlider .rsContainer {
+    height: 250px !important;
+  }
+  .home .rsDefaultInv .rsGCaption, .category .rsDefaultInv .rsGCaption {
+    padding: 2px 0;
+    font-size: 1.5em;
+    width: 50%;
+    bottom: 25px;
+}
 }
 body .pgntn-page-pagination-intro, .pgntn-page-pagination a, body .pgntn-page-pagination .current {
   float: none;
@@ -2025,4 +2079,24 @@ body div#tribe-events-pg-template {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+@media (max-width: 450px) {
+  div.wrapper article article .entry-title {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  div.wrapper article.latest-stories article .entry-content {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1122px) {
+body .latest-stories-ad {
+  max-width: 100%;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+}
+.pgntn-page-pagination-block {
+  margin-top: 1.2em;
 }

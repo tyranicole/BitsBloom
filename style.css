@@ -26,20 +26,20 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 3.0 Elements
 4.0 Forms
 5.0 Navigation
-	5.1 Links
-	5.2 Menus
+  5.1 Links
+  5.2 Menus
 6.0 Accessibility
 7.0 Alignments
 8.0 Clearings
 9.0 Widgets
 10.0 Content
-	10.1 Posts and pages
-	10.2 Asides
-	10.3 Comments
+  10.1 Posts and pages
+  10.2 Asides
+  10.3 Comments
 11.0 Infinite scroll
 12.0 Media
-	12.1 Captions
-	12.2 Galleries
+  12.1 Captions
+  12.2 Galleries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1.0 Normalize
@@ -542,14 +542,14 @@ nav#site-navigation a.bitsbulletin {
   display: none; }
 
 /* @media screen and (max-width: 600px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-	}
+  .menu-toggle,
+  .main-navigation.toggled .nav-menu {
+    display: block;
+  }
 
-	.main-navigation ul {
-		display: none;
-	}
+  .main-navigation ul {
+    display: none;
+  }
 } */
 @media screen and (max-width: 1080px) {
   .menu-toggle,
@@ -613,9 +613,6 @@ footer.site-footer {
         font-weight: bold;
         font-size: 15px;
         text-transform: uppercase; }
-      #footer-sidebar1 ul li a:hover {
-        opacity: .75;
-      }  
       #footer-sidebar1 ul.social {
         max-width: 50%;
         float: right;
@@ -1054,9 +1051,6 @@ section#moreOn {
     display: none;
   }
 }  
- section#moreOn h2 {
-  margin-top: 25px;
- }
   section#moreOn.category-beauty h2 {
     color: #662d91; }
   section#moreOn.category-beauty .image {
@@ -1535,7 +1529,7 @@ div.wrapper {
           float: left;
           margin-left: 0;
           margin-right: 2%;
-          margin-bottom: 2em }
+          margin-bottom: 1em }
         div.wrapper article.latest-stories article:nth-of-type(5), div.wrapper article.latest-stories article:nth-of-type(8), div.wrapper article.latest-stories article:nth-of-type(11) {  
         margin-right: 0;
         }}
@@ -1721,28 +1715,24 @@ section.sidebar {
   section.sidebar aside.widget_recent_entries {
     background: #e7e7e8;
     background-image: url("images/stripe_bg.png");
-<<<<<<< HEAD
     height: 318px; }
-=======
-    height: 320px; }
->>>>>>> origin/master
     section.sidebar aside.widget_recent_entries h1 {
       text-align: center;
       text-transform: uppercase;
       font-size: 24px;
       padding: 10px 0;
-      border-bottom: 1px solid #ddd;
-      margin-bottom: 0; }
+      border-bottom: 1px solid #ddd; }
     section.sidebar aside.widget_recent_entries ul {
       list-style-type: none;
       margin: 0;
       padding: 0; }
       section.sidebar aside.widget_recent_entries ul li {
-        padding: 10px 0 10px 15px;
+        padding: 0px 0px 11px 15px;
         width: 100%;
         margin: 0;
         border-bottom: 1px solid #ddd;
         font-size: 20px;
+        display: inline-block;
         max-width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -1804,7 +1794,7 @@ section.sidebar {
           background: #662d91 !important; }
         .category section.sidebar div.mc4wp-form {
           padding-top: 10px;
-          padding-bottom: 7px;
+          padding-bottom: 6px;
         }  
 
 #primary .sidebar-archive {

@@ -926,6 +926,11 @@ body.category-lifestyle nav#site-navigation li.categories ul li.current-cat {
       .content-area article .author .left {
         float: left;
         display: inline-block; }
+        @media(max-width: 400px) {
+          .content-area article .author .left {
+            display: none;
+          }
+        }
       .content-area article .author .right {
         display: inline-block;
         margin-left: 10px;
@@ -1483,6 +1488,8 @@ div.wrapper {
       div.wrapper article.latest-stories article .entry-content .author {
         font-size: 12px;
         padding: 5px 5px 5px 0px;
+        background-color: white;
+        z-index: 100px;
       }
       div.wrapper article.latest-stories article .entry-content .author .right {
         font-size: 12px;
@@ -1575,7 +1582,12 @@ div.wrapper {
         font-size: 12px; }
       div.wrapper article article li.tag a {
         font-size: 12px;
-      }  
+      }
+      @media(max-width: 400px) {
+        div.wrapper article article li.tag a {
+          font-size: 11px;
+        }
+      }
         div.wrapper article article .post-categories a:first-of-type {
           display: none; }
         div.wrapper article article .post-categories li {
@@ -1585,6 +1597,11 @@ div.wrapper {
             padding: 5px 3px 5px 3px;
             background: #ed1a51;
             color: white; }
+            @media(max-width: 400px) {
+              div.wrapper article article .post-categories li a {
+                font-size: 11px;
+              }
+            }
       div.wrapper article article li.tag {
         list-style-type: none;
         display: inline-block;

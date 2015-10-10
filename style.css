@@ -509,17 +509,18 @@ nav#site-navigation li.categories ul li {
       line-height: 2.5em;
     }
     body nav#site-navigation a.bitsbulletin {
-      padding-left: 0 !important;
       width: 100%;
       margin-left: -20px;
       margin-right: -20px;
       box-sizing: border-box;
       text-align: left;
-      padding-left: 20px !important;
-      height: 60px;
       box-shadow: 0 5px 10px rgba(0,0 , 0, .2);
       -moz-box-shadow: 0 5px 10px rgba(0,0 , 0, .2);
       -webkit-box-shadow: 0 5px 10px rgba(0,0 , 0, .2);
+      font-size: 18px;
+      height: 88px;
+    line-height: 4.6em;
+    padding: 0 20px;
     }
     nav#site-navigation li.categories ul li.current-cat {
       border: none !important;
@@ -527,16 +528,6 @@ nav#site-navigation li.categories ul li {
   }
   nav#site-navigation li.categories ul li.current-cat {
     border: 3px solid black; }
-nav#site-navigation a.bitsbulletin {
-  padding: 4px 13px;
-  height: 89px; }
-  @media screen and (min-width: 1080px) {
-    body header.site-header .center nav#site-navigation a.bitsbulletin {
-      text-align: center;
-      height: 89px;
-      padding: 0 20px !important;
-      border-left: 1px solid #e7e7e8; } }
-
 /* Small menu. */
 .menu-toggle {
   display: none; }
@@ -553,7 +544,7 @@ nav#site-navigation a.bitsbulletin {
 } */
 @media screen and (max-width: 1080px) {
   .menu-toggle,
-  .main-navigation.toggled .nav-menu {
+  .main-navigation.toggled .nav-menu, body header.site-header .center nav#site-navigation.toggled a.bitsbulletin.nav-menu {
     display: block; }
 
   .main-navigation ul {
@@ -726,16 +717,32 @@ footer.site-footer {
 .menu-toggle.active span:after {
   transform: rotate(-45deg); }
 
-a.bitsbulletin {
+body header.site-header .center nav#site-navigation a.bitsbulletin {
   display: inline-block;
   float: left;
-  padding: 0 20px;
-  font-size: 22px;
+  padding: 0 20px !important;
   color: #FF8000;
   font-weight: 600;
-  background: white; }
-  a.bitsbulletin:visited, a.bitsbulletin:hover {
-    color: #FF8000; }
+  height: 69px;
+  background: white;
+  line-height: 4.6em;
+  display: none;
+  font-size: 22px;
+  line-height: 2.5em;
+  width: 100vw; }
+  @media screen and (min-width: 1081px) {
+    body header.site-header .center nav#site-navigation a.bitsbulletin {
+      text-align: center;
+      display: block;
+      line-height: 4.6em;
+      font-size: 18px;
+      width: auto;
+      height: 89px;
+      border-left: 1px solid #e7e7e8; }
+      a.bitsbulletin:visited, a.bitsbulletin:hover {
+        opacity: .75; 
+      }
+  }    
 
 nav.navigation.posts-navigation {
   float: left;
@@ -1319,7 +1326,7 @@ header.site-header {
     height: 100%;
     line-height: 99px;
     display: block; }
-    @media only screen and (min-width: 1080px) {
+    @media only screen and (min-width: 1081px) {
       header.site-header nav#site-navigation {
         float: right; } }
     header.site-header nav#site-navigation ul {
@@ -1344,7 +1351,7 @@ header.site-header {
       padding: 0 13px;
       width: 100%;
       height: 89px; }
-      @media only screen and (min-width: 1080px) {
+      @media only screen and (min-width: 1081px) {
         header.site-header nav#site-navigation li {
           width: auto; } }
       header.site-header nav#site-navigation li.categories {
@@ -1355,11 +1362,11 @@ header.site-header {
         width: 100vw;
         display: inline-block;
         background: white; }
-        @media only screen and (min-width: 1080px) {
+        @media only screen and (min-width: 1081px) {
           header.site-header nav#site-navigation li.categories {
             border-bottom: 1px solid #e7e7e8 !important;
             width: auto; }
-            header.site-header nav#site-navigation li.categories a{
+            header.site-header nav#site-navigation li.categories a {
               font-size: 18px;
               height: 88px;
               line-height: 4.6em;
@@ -2116,4 +2123,9 @@ body .latest-stories-ad {
 }
 .pgntn-page-pagination-block {
   margin-top: 1.2em;
+}
+@media (max-width: 800px) {
+body .latest-stories-ad {
+  margin-top: .4em;
+}
 }

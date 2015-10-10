@@ -20,10 +20,7 @@
 <script type="text/javascript">
 $(document).ready(function() {
 	 var bits = '<a class="bitsbulletin" href="/bitsbulletin">bitsbulletin</a>';
-	setTimeout(function() {
-		$('ul.nav-menu').append(bits);
-
-	}, 500);
+		//$('ul.nav-menu').append(bits);
 });
 </script>
 
@@ -54,7 +51,7 @@ $(document).ready(function() {
 			<?php // wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 
 			<?php wp_list_categories('title_li=<h2>Categories</h2>'); ?>
-			<!-- <a class="bitsbulletin" href="/bitsbulletin">bitsbulletin</a> -->
+			<a class="bitsbulletin last-menu nav-menu" href="/bitsbulletin">bitsbulletin</a>
 			<ul class="social">
 				<li><a href="https://www.facebook.com/bitsbloom" target="_blank"><i class="fa fa-facebook" target="_blank"></i></a></li>
 				<li><a href="https://twitter.com/bitsbloom" target="_blank"><i class="fa fa-twitter"></i></a></li>
